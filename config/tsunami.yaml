@@ -1,0 +1,38 @@
+#base_dir: /home/online/open-scd.pytorch/data
+dataset_name : TSUNAMI
+dataset_base_dir : /home/online/open-scd.pytorch/data
+save_base_dir : /home/online/open-scd.pytorch/backup
+train_data_dir : train
+val_data_dir : val
+train_txt_dir : trainval.txt
+val_txt_dir : test.txt
+pretrain_weights_dir : /home/online/open-scd.pytorch/pretrain_weights
+save_weights_dir : backup
+batch_size : 1
+weight_decay : 0.00005
+init_learning_rate : 0.00001
+momentum : 0.95
+ingore_value : 255
+display_interval : 20
+validate_interval : 20
+save_weights_interval : 5000
+max_epoch : 30
+backbone : unet
+training_policy : sgd
+data_augment : False
+margin : 2.0
+thresh : 0.3
+random_scale : 2
+random_rotate : 10
+crop_size : 840
+visualization : True
+mean_value_t0 : [
+  128.67622059413367, 
+  108.1590914590018, 
+  96.77306175231934
+]
+mean_value_t1 : [
+  166.35256189618795, 
+  136.791679927281, 
+  122.46721850803922
+]
